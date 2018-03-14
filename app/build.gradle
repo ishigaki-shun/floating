@@ -4,6 +4,9 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+// DataBindingを使用するために必要なプラグイン
+apply plugin: 'kotlin-kapt'
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -20,6 +23,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    // DataBindingを使用するための設定
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -30,4 +38,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    // DataBindingのコンパイラを依存関係に追加
+    kapt 'com.android.databinding:compiler:3.0.1'
 }
