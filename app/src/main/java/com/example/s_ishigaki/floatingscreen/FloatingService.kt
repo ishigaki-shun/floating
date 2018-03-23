@@ -24,10 +24,6 @@ class FloatingService: Service() {
 
     override fun onBind(p0: Intent?): IBinder? = null
 
-    override fun onCreate() {
-        super.onCreate()
-    }
-
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         // Service起動中の通知を表示
         startNotification()
