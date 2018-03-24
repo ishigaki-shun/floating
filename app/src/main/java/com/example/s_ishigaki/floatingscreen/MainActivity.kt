@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
      * 各種Buttonのテキストの設定
      */
     private fun initButtonConfig() {
-        val buttonConfig = ButtonConfig("start", "stop", "finish")
+        val buttonConfig = ButtonData("start", "stop", "finish")
         binding.config = buttonConfig
     }
 

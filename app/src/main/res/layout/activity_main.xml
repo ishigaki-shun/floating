@@ -8,7 +8,7 @@
     <data>
         <variable
             name="config"
-            type="com.example.s_ishigaki.floatingscreen.ButtonConfig" />
+            type="com.example.s_ishigaki.floatingscreen.ButtonData" />
     </data>
 
 
